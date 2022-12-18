@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>key frames and animation</title>
+</head>
+<style>
+.container{
+        background-color:greenyellow;
+    }
+.box{
+    background-color: green;
+    width: 250px;
+    height: 300px;
+    animation: vishal;
+    animation-duration: 5s;
+    animation-iteration-count: 3;
+    animation-fill-mode:alternate;
+    animation-timing-function: ease-in;
+    animation-delay: 3s;
+    animation-direction: reverse;
+}
+.box1{
+    background-image: url("jar.png");
+    width: 300px;
+    height: 300px;
+    animation: jar;
+    animation-duration: 5s;
+    animation-fill-mode: alternate;
+    animation
+}
+@keyframes vishal{
+
+    form{
+        width: 200px;
+    }
+    to{
+        width: 1600px;
+    }
+}
+@keyframes jar{
+    form{
+        width: 300px;
+    }
+    to{
+        width:1600px ;
+    }
+}
+</style>
+<body>
+    <div class="container"> 
+        <div class="box">this is box</div>
+
+        <div class="vis">
+            <div class="box1">this is bix1</div>
+
+
+        </div>
+        
+    
+</body>
+</html>

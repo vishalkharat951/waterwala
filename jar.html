@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+#buy{
+    background-color: greenyellow;
+    border-radius: 3%;
+    border-color: black;
+}
+
+
+</style>
+
+<body>
+
+ 
+    <div class="card" style="width: 18rem;" id="a11">
+        <img class="card-img-top" src="jar1.png" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Water Jar</h5>
+          <p class="card-text">To order the Water Jar please click the button below.</p>
+          <div class="row">
+            <a href="#" class="btn btn-primary" id="buy" >Click me</a>
+        </div>
+        </div>
+      </div>
+<div>
+    
+</div>
+       
+<div class="container ragister">
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="tab-pane fade show activ text-align from-new"
+        id="home"
+        role="tabpanel"
+        aria-labelledby="home tab">
+        <h3 class="register-heading text-nowrap ">form to whatapp</h3>
+        <div class="col-md-12">
+            <form autocomplete="off">
+                <div class="form-group">
+                    <input type="text"
+                name="Name"
+                id="name"
+                class="form-control"
+                placeholder="your name"
+                value=""
+                required=""/>
+                </div>
+
+
+
+                <div class="form-group">
+                    <input type="number"
+                name="phone"
+                id="phone"
+                class="form-control"
+                placeholder="your phone number"
+                value=""
+                required=""/>
+                </div>
+                 
+
+                <div class="form-group">
+                    <select class="from-control"
+                    id="service">
+                    <option>Default select</option> 
+                    <option>Website develoupment</option>
+                    <option>App develoupment</option></select>
+                
+
+                
+                <div class="form-group">
+                    <input 
+                    type="submit"
+                    onclick="gotowhatsapp();"
+                    name="submit"/>
+
+                </div>
+
+
+            </form>
+
+
+        </div>
+        
+        </div>
+    </div>
+
+
+
+</div>
+
+
+
+</div>
+
+<a class="float" href="https://wa.me/8669303401?text=">
+<img src="jar.png" height="100" width="100"> </a>
+<a href="https://wa.me/8669303401?text=Hi%20There!"
+target="_blank">click</a>
+
+<script>
+    function gotowhatsapp() {
+var name = document.getElementById("name").value;
+var phone = document.getElementById("phone").value;
+var service = document.getElementById("phone").value;
+
+
+var url=
+"https://wa.me/8669303401?text=Hi%20There!" +
+"Name:" +
+ name + 
+ "%0a" 
+ +"Phone:"
+ + phone +
+ "%0a" +
+ "service:" 
+ + sevice;
+ 
+ window.open(url,"_blank","").focus();  }
+</script>
+
+<script src="https//maxcdn.bootstrap.com/4.111/js/bootstrap.min.js>"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+
+
+
+</body>
+</html>

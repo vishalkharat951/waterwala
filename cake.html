@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+  #body{
+    background-color: yellow;
+    background-image: url("waterbg.png");
+    background-size: cover;
+    align-self: inherit;
+  }
+#nav{
+  margin-left: 8%;
+  margin-top: 4%;
+  align-self: center;
+
+}
+#form{
+margin-top: 2%;
+background-color: aqua;
+border-radius: 3%;
+margin-right:70%;
+padding-left: 10%;
+}
+
+#a3{
+  background-color: lightsalmon;
+  align-content: center;
+   
+}
+
+#sub{
+  margin-left: 25%;
+  margin-top: 5%;
+}
+#ma{
+  
+align-content: center;
+}
+
+</style>
+<body id="body" >
+  
+<div class="box" id="ma">
+<div class="fcontainer" id="a1">
+
+  <div class="box"><img src="cakes.png" alt="" id="a2"> </div>
+  <div class="box">To order the Water Jar please click the button below.</div>
+
+
+
+   <div class="box" id="a3">
+  <div class="box" id="form">
+    <div >
+    <form action="https://script.google.com/macros/s/AKfycbzTwpuh72BBrrWoSAkiWl_QQz-pcdjqZQ0PaVwC2NoW/dev" method="post">
+    <input type="text" name="Name" placeholder="your name" id="nav"><br>
+    <input type="number" name="quatity" placeholder="your quantity" id="nav"><br>
+    <input type="number" name="Number" placeholder="mobile number" id="nav" > <br>
+    <input type="text" name="massage" value="cakes" id="nav" > <br>
+    
+    <input type="submit" name="submit" value="submit" id="sub" href="javasript:void(0)" onclick="start()">
+</form>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+
+<script>
+    const scriptURL = ''
+    const form = document.forms['formName']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => alert("Thank you! your form is submitted successfully." ))
+        .then(() => {  window.location.reload(); })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+
+<script src="push.js"></script>
+<script src="serviceWorker.min.js"></script>"
+<script src="https://code.jquery.com/jquery-3.6.2.min.js" integrity="sha256-2krYZKh//PcchRtd+H+VyyQoZ/e3EcrkxhM8ycwASPA=" crossorigin="anonymous"></script>
+<script>
+function start() {
+    Push.create('order placed successfully')    
+}
+
+</script>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
